@@ -1,7 +1,31 @@
 export default defineNuxtConfig({
   compatibilityDate: '2025-05-15',
   devtools: { enabled: true },
-  ssr: false,
+  ssr: true,
+
+  routeRules: {
+    // Public pages — SSR for SEO
+    '/': { ssr: true },
+    '/courses': { ssr: true },
+    '/courses/**': { ssr: true },
+    '/library': { ssr: true },
+    '/library/**': { ssr: true },
+    '/translator': { ssr: true },
+    '/dictionary': { ssr: true },
+    '/dictionary/**': { ssr: true },
+    '/about': { ssr: true },
+
+    // Auth pages — SPA (no SSR needed)
+    '/auth/**': { ssr: false },
+
+    // Protected pages — SPA (no SSR needed)
+    '/dashboard': { ssr: false },
+    '/profile': { ssr: false },
+    '/my-courses': { ssr: false },
+    '/learn/**': { ssr: false },
+    '/teacher/**': { ssr: false },
+    '/admin/**': { ssr: false },
+  },
 
   modules: [
     '@pinia/nuxt',
@@ -20,6 +44,7 @@ export default defineNuxtConfig({
     public: {
       apiBase: process.env.NUXT_PUBLIC_API_BASE || 'http://localhost:8000/api',
       appName: process.env.NUXT_PUBLIC_APP_NAME || 'Olulimi Lwirhu',
+      siteUrl: process.env.NUXT_PUBLIC_SITE_URL || 'https://olulimi.com',
       googleClientId: process.env.NUXT_PUBLIC_GOOGLE_CLIENT_ID || '',
     },
   },
@@ -71,6 +96,11 @@ export default defineNuxtConfig({
     },
   },
 
+  site: {
+    url: process.env.NUXT_PUBLIC_SITE_URL || 'https://olulimi.com',
+    name: 'Olulimi Lwirhu',
+  },
+
   app: {
     head: {
       htmlAttrs: { lang: 'fr' },
@@ -78,11 +108,26 @@ export default defineNuxtConfig({
       meta: [
         { charset: 'utf-8' },
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-        { name: 'description', content: 'Plateforme de formation en ligne pour la langue Mashi' },
+        { name: 'description', content: 'Plateforme de formation en ligne pour la langue Mashi. Cours, traducteur, dictionnaire et bibliothèque.' },
         { name: 'theme-color', content: '#0d6efd' },
+        // Open Graph
+        { property: 'og:type', content: 'website' },
+        { property: 'og:site_name', content: 'Olulimi Lwirhu' },
+        { property: 'og:locale', content: 'fr_FR' },
+        { property: 'og:image', content: '/images/og-cover.png' },
+        { property: 'og:image:width', content: '1200' },
+        { property: 'og:image:height', content: '630' },
+        // Twitter Card
+        { name: 'twitter:card', content: 'summary_large_image' },
+        { name: 'twitter:image', content: '/images/og-cover.png' },
+        // SEO
+        { name: 'robots', content: 'index, follow' },
+        { name: 'author', content: 'Franck Minani & Christian Kasse' },
+        { name: 'keywords', content: 'Mashi, aMashi, Shi, langue, apprendre, cours, Sud-Kivu, Congo, RDC, Bashi, bantu, traducteur, dictionnaire' },
       ],
       link: [
         { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+        { rel: 'canonical', href: 'https://olulimi.com' },
       ],
     },
     pageTransition: { name: 'page', mode: 'out-in' },
