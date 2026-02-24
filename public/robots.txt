@@ -1,0 +1,17 @@
+User-agent: *
+Allow: /
+Allow: /courses
+Allow: /library
+Allow: /translator
+Allow: /dictionary
+Allow: /about
+
+Disallow: /auth/
+Disallow: /dashboard
+Disallow: /profile
+Disallow: /my-courses
+Disallow: /learn/
+Disallow: /teacher/
+Disallow: /admin/
+
+Sitemap: https://olulimi.com/sitemap.xml
