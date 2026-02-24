@@ -1,0 +1,77 @@
+{
+  "app": {
+    "name": "Olulimi Lwirhu",
+    "tagline": "Apprenez le Mashi en ligne"
+  },
+  "nav": {
+    "home": "Accueil",
+    "courses": "Cours",
+    "library": "Bibliothèque",
+    "dictionary": "Dictionnaire",
+    "about": "À propos",
+    "login": "Connexion",
+    "register": "Inscription",
+    "dashboard": "Tableau de bord",
+    "myCourses": "Mes cours",
+    "profile": "Mon profil",
+    "logout": "Déconnexion",
+    "teacher": "Espace enseignant",
+    "admin": "Administration"
+  },
+  "auth": {
+    "loginTitle": "Connexion",
+    "registerTitle": "Inscription",
+    "email": "Adresse e-mail",
+    "password": "Mot de passe",
+    "fullName": "Nom complet",
+    "loginButton": "Se connecter",
+    "registerButton": "S'inscrire",
+    "googleButton": "Continuer avec Google",
+    "noAccount": "Pas encore de compte ?",
+    "hasAccount": "Déjà un compte ?",
+    "forgotPassword": "Mot de passe oublié ?"
+  },
+  "courses": {
+    "catalog": "Catalogue des cours",
+    "enroll": "S'inscrire",
+    "unenroll": "Se désinscrire",
+    "enrolled": "Inscrit",
+    "beginner": "Débutant",
+    "intermediate": "Intermédiaire",
+    "advanced": "Avancé",
+    "sessions": "Sessions",
+    "chapters": "Chapitres",
+    "allLevels": "Tous les niveaux"
+  },
+  "teacher": {
+    "dashboard": "Tableau de bord enseignant",
+    "myCourses": "Mes cours",
+    "newCourse": "Nouveau cours",
+    "editCourse": "Modifier le cours",
+    "stats": "Statistiques",
+    "enrollments": "Inscriptions",
+    "completion": "Taux de complétion"
+  },
+  "admin": {
+    "dashboard": "Administration",
+    "users": "Utilisateurs",
+    "allCourses": "Tous les cours",
+    "stats": "Statistiques",
+    "promote": "Promouvoir enseignant",
+    "deactivate": "Désactiver"
+  },
+  "common": {
+    "loading": "Chargement...",
+    "save": "Enregistrer",
+    "cancel": "Annuler",
+    "delete": "Supprimer",
+    "edit": "Modifier",
+    "create": "Créer",
+    "search": "Rechercher...",
+    "noResults": "Aucun résultat",
+    "confirm": "Confirmer",
+    "back": "Retour",
+    "next": "Suivant",
+    "previous": "Précédent"
+  }
+}
