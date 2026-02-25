@@ -1,6 +1,5 @@
 <script setup lang="ts">
 definePageMeta({ layout: 'auth', middleware: ['guest'] })
-useHead({ title: 'Inscription' })
 
 import {
   EyeIcon,
@@ -14,6 +13,7 @@ import {
 import { useAuthStore } from '~/stores/auth'
 
 const { t } = useLocale()
+useHead({ title: computed(() => t('head.register')) })
 const router = useRouter()
 const auth = useAuthStore()
 

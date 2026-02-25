@@ -6,7 +6,8 @@ definePageMeta({
   layout: 'teacher',
 })
 
-useHead({ title: 'Espace enseignant — Olulimi Lwirhu' })
+const { t } = useLocale()
+useHead({ title: computed(() => t('head.teacher')) })
 
 const { fetchMyCourses } = useTeacher()
 const { error: showError } = useToast()

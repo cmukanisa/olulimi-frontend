@@ -1,12 +1,12 @@
 <script setup lang="ts">
 const { t } = useLocale()
 
-useHead({ title: 'A propos — Olulimi Lwirhu' })
+useHead({ title: computed(() => t('head.about')) })
 useSeoMeta({
-  title: 'A propos du Mashi — Olulimi Lwirhu',
-  ogTitle: 'A propos du Mashi — Olulimi Lwirhu',
-  description: 'Decouvrez l\'histoire et la richesse de la langue Mashi, langue bantoue parlee dans l\'est de la RDC. Plus de 4 millions de locuteurs.',
-  ogDescription: 'Decouvrez l\'histoire et la richesse de la langue Mashi, langue bantoue parlee dans l\'est de la RDC.',
+  title: computed(() => t('head.about')),
+  ogTitle: computed(() => t('head.about')),
+  description: computed(() => t('seo.aboutDesc')),
+  ogDescription: computed(() => t('seo.aboutDesc')),
 })
 
 const reasons = computed(() => [

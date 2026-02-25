@@ -1,13 +1,13 @@
 <script setup lang="ts">
-useHead({ title: 'Catalogue des cours — Olulimi Lwirhu' })
+const { t } = useLocale()
+useHead({ title: computed(() => t('head.courses')) })
 useSeoMeta({
-  title: 'Catalogue des cours de Mashi — Olulimi Lwirhu',
-  ogTitle: 'Catalogue des cours de Mashi — Olulimi Lwirhu',
-  description: 'Parcourez nos cours de Mashi : debutant, intermediaire et avance. Apprenez a votre rythme avec des lecons structurees.',
-  ogDescription: 'Parcourez nos cours de Mashi : debutant, intermediaire et avance.',
+  title: computed(() => t('head.courses')),
+  ogTitle: computed(() => t('head.courses')),
+  description: computed(() => t('seo.coursesDesc')),
+  ogDescription: computed(() => t('seo.coursesDesc')),
 })
 
-const { t } = useLocale()
 const { courses, loading, fetchCourses } = useCourses()
 
 const selectedLevel = ref('all')

@@ -6,7 +6,8 @@ definePageMeta({
   layout: 'admin',
 })
 
-useHead({ title: 'Statistiques — Admin — Olulimi Lwirhu' })
+const { t } = useLocale()
+useHead({ title: computed(() => t('head.adminStats')) })
 
 const { fetchStats } = useAdmin()
 const { error: showError } = useToast()

@@ -1,13 +1,12 @@
 <script setup lang="ts">
-useHead({ title: 'Bibliotheque — Olulimi Lwirhu' })
-useSeoMeta({
-  title: 'Bibliotheque Mashi — Olulimi Lwirhu',
-  ogTitle: 'Bibliotheque Mashi — Olulimi Lwirhu',
-  description: 'Explorez notre collection de livres et ressources sur la langue et la culture Mashi. Telechargement gratuit.',
-  ogDescription: 'Explorez notre collection de livres et ressources sur la langue et la culture Mashi.',
-})
-
 const { t } = useLocale()
+useHead({ title: computed(() => t('head.library')) })
+useSeoMeta({
+  title: computed(() => t('head.library')),
+  ogTitle: computed(() => t('head.library')),
+  description: computed(() => t('seo.libraryDesc')),
+  ogDescription: computed(() => t('seo.libraryDesc')),
+})
 const { books, categories, loading, fetchBooks, fetchCategories } = useLibrary()
 
 const selectedCategory = ref<string | null>(null)

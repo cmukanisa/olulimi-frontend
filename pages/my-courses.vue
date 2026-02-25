@@ -6,7 +6,8 @@ definePageMeta({
   layout: 'dashboard',
 })
 
-useHead({ title: 'Mes cours — Olulimi Lwirhu' })
+const { t } = useLocale()
+useHead({ title: computed(() => t('head.myCourses')) })
 
 const { fetchMyEnrollments, unenroll } = useEnrollments()
 const { success, error: showError } = useToast()

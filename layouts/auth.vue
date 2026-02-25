@@ -1,4 +1,5 @@
 <script setup lang="ts">
+const { t } = useLocale()
 const currentYear = new Date().getFullYear()
 </script>
 
@@ -13,7 +14,7 @@ const currentYear = new Date().getFullYear()
         </NuxtLink>
         <NuxtLink to="/" class="text-sm text-slate-500 hover:text-primary-600 transition-colors flex items-center gap-1">
           <Icon name="heroicons:arrow-left" class="w-4 h-4" />
-          Retour a l'accueil
+          {{ t('auth.backHome') }}
         </NuxtLink>
       </div>
     </header>
@@ -27,7 +28,7 @@ const currentYear = new Date().getFullYear()
 
     <!-- Footer -->
     <div class="px-4 sm:px-8 py-4 flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-4 text-xs sm:text-sm text-slate-500 border-t border-slate-200 bg-white">
-      <span>&copy; {{ currentYear }} Olulimi Lwirhu. Tous droits reserves.</span>
+      <span>&copy; {{ currentYear }} Olulimi Lwirhu. {{ t('auth.allRightsReserved') }}</span>
     </div>
   </div>
 </template>

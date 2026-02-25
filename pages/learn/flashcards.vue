@@ -6,7 +6,8 @@ definePageMeta({
   layout: 'dashboard',
 })
 
-useHead({ title: 'Flashcards — Olulimi Lwirhu' })
+const { t } = useLocale()
+useHead({ title: computed(() => t('head.flashcards')) })
 
 const { fetchFlashcardDecks } = useLearning()
 const { apiFetch } = useApi()
