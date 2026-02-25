@@ -4,7 +4,8 @@ definePageMeta({
   layout: 'dashboard',
 })
 
-useHead({ title: 'Mon profil — Olulimi Lwirhu' })
+const { t } = useLocale()
+useHead({ title: computed(() => t('head.profile')) })
 
 const authStore = useAuthStore()
 const { updateProfile } = useAuth()

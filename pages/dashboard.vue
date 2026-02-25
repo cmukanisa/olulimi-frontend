@@ -7,7 +7,8 @@ definePageMeta({
   layout: 'dashboard',
 })
 
-useHead({ title: 'Tableau de bord — Olulimi Lwirhu' })
+const { t } = useLocale()
+useHead({ title: computed(() => t('head.dashboard')) })
 
 const authStore = useAuthStore()
 const { fetchMyEnrollments } = useEnrollments()

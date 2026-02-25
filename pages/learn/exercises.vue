@@ -6,7 +6,8 @@ definePageMeta({
   layout: 'dashboard',
 })
 
-useHead({ title: 'Exercices de traduction — Olulimi Lwirhu' })
+const { t } = useLocale()
+useHead({ title: computed(() => t('head.exercises')) })
 
 const { fetchExercises } = useLearning()
 const { error: showError } = useToast()

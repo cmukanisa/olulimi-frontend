@@ -4,7 +4,8 @@ definePageMeta({
   layout: 'teacher',
 })
 
-useHead({ title: 'Nouveau cours — Enseignant — Olulimi Lwirhu' })
+const { t } = useLocale()
+useHead({ title: computed(() => t('head.teacherNewCourse')) })
 
 const { createCourse } = useCourses()
 const { success, error: showError } = useToast()

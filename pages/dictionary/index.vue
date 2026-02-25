@@ -1,13 +1,12 @@
 <script setup lang="ts">
-useHead({ title: 'Dictionnaire Mashi-Francais — Olulimi Lwirhu' })
-useSeoMeta({
-  title: 'Dictionnaire Mashi-Francais — Olulimi Lwirhu',
-  ogTitle: 'Dictionnaire Mashi-Francais — Olulimi Lwirhu',
-  description: 'Dictionnaire Mashi-Francais complet avec phonetique, exemples et categories grammaticales. Recherche instantanee.',
-  ogDescription: 'Dictionnaire Mashi-Francais complet avec phonetique, exemples et categories grammaticales.',
-})
-
 const { t } = useLocale()
+useHead({ title: computed(() => t('head.dictionary')) })
+useSeoMeta({
+  title: computed(() => t('head.dictionary')),
+  ogTitle: computed(() => t('head.dictionary')),
+  description: computed(() => t('seo.dictionaryDesc')),
+  ogDescription: computed(() => t('seo.dictionaryDesc')),
+})
 const route = useRoute()
 const { entries, loading, error, searchEntries, fetchAllEntries } = useDictionary()
 

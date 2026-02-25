@@ -6,7 +6,8 @@ definePageMeta({
   layout: 'teacher',
 })
 
-useHead({ title: 'Mes cours — Enseignant — Olulimi Lwirhu' })
+const { t } = useLocale()
+useHead({ title: computed(() => t('head.teacherCourses')) })
 
 const { fetchMyCourses } = useTeacher()
 const { deleteCourse } = useCourses()
