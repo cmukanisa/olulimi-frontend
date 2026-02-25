@@ -205,6 +205,12 @@ const translations: Record<Locale, Translations> = {
     'auth.tipText': 'Le code expire dans 15 minutes. Vérifiez vos e-mails y compris le dossier spam.',
     'auth.changeMethod': 'Changer de méthode',
 
+    // Auth layout
+    'auth.backHome': 'Retour à l\'accueil',
+    'auth.allRightsReserved': 'Tous droits réservés.',
+    'auth.googleLoading': 'Connexion avec Google en cours...',
+    'auth.googleBack': 'Retour à la connexion',
+
     // Dictionary
     'dictionary.title': 'Dictionnaire Mashi-Français',
     'dictionary.subtitle': 'Recherchez des mots en Mashi ou en Français',
@@ -216,6 +222,37 @@ const translations: Record<Locale, Translations> = {
     'dictionary.noResultsSearch': 'Aucun mot trouvé pour',
     'dictionary.tryAnother': 'Essayez un autre terme.',
     'dictionary.empty': 'Le dictionnaire est vide pour le moment.',
+
+    // Page titles (browser tab)
+    'head.home': 'Olulimi Lwirhu — Apprenez le Mashi',
+    'head.about': 'À propos — Olulimi Lwirhu',
+    'head.courses': 'Catalogue des cours — Olulimi Lwirhu',
+    'head.library': 'Bibliothèque — Olulimi Lwirhu',
+    'head.translator': 'Traducteur Mashi-Français — Olulimi Lwirhu',
+    'head.dictionary': 'Dictionnaire Mashi-Français — Olulimi Lwirhu',
+    'head.login': 'Connexion — Olulimi Lwirhu',
+    'head.register': 'Inscription — Olulimi Lwirhu',
+    'head.googleCallback': 'Connexion Google...',
+    'head.dashboard': 'Tableau de bord — Olulimi Lwirhu',
+    'head.myCourses': 'Mes cours — Olulimi Lwirhu',
+    'head.profile': 'Mon profil — Olulimi Lwirhu',
+    'head.admin': 'Administration — Olulimi Lwirhu',
+    'head.adminCourses': 'Tous les cours — Admin — Olulimi Lwirhu',
+    'head.adminStats': 'Statistiques — Admin — Olulimi Lwirhu',
+    'head.adminUsers': 'Gestion des utilisateurs — Admin — Olulimi Lwirhu',
+    'head.teacher': 'Espace enseignant — Olulimi Lwirhu',
+    'head.teacherCourses': 'Mes cours — Enseignant — Olulimi Lwirhu',
+    'head.teacherNewCourse': 'Nouveau cours — Enseignant — Olulimi Lwirhu',
+    'head.flashcards': 'Flashcards — Olulimi Lwirhu',
+    'head.exercises': 'Exercices de traduction — Olulimi Lwirhu',
+
+    // SEO descriptions
+    'seo.homeDesc': 'Plateforme de formation en ligne pour la langue Mashi. Cours structurés, quiz interactifs, dictionnaire complet et bibliothèque.',
+    'seo.aboutDesc': 'Découvrez l\'histoire et la richesse de la langue Mashi, langue bantoue parlée dans l\'est de la RDC.',
+    'seo.coursesDesc': 'Parcourez nos cours de Mashi : débutant, intermédiaire et avancé. Apprenez à votre rythme.',
+    'seo.libraryDesc': 'Explorez notre collection de livres et ressources sur la langue et la culture Mashi.',
+    'seo.translatorDesc': 'Traduisez des mots et phrases entre le Mashi et le Français. Traducteur en ligne gratuit.',
+    'seo.dictionaryDesc': 'Dictionnaire Mashi-Français complet avec phonétique, exemples et catégories grammaticales.',
   },
 
   en: {
@@ -429,6 +466,43 @@ const translations: Record<Locale, Translations> = {
     'dictionary.noResultsSearch': 'No word found for',
     'dictionary.tryAnother': 'Try another term.',
     'dictionary.empty': 'The dictionary is empty for now.',
+
+    // Auth layout
+    'auth.backHome': 'Back to home',
+    'auth.allRightsReserved': 'All rights reserved.',
+    'auth.googleLoading': 'Signing in with Google...',
+    'auth.googleBack': 'Back to login',
+
+    // Page titles (browser tab)
+    'head.home': 'Olulimi Lwirhu — Learn Mashi',
+    'head.about': 'About — Olulimi Lwirhu',
+    'head.courses': 'Course catalog — Olulimi Lwirhu',
+    'head.library': 'Library — Olulimi Lwirhu',
+    'head.translator': 'Mashi-French Translator — Olulimi Lwirhu',
+    'head.dictionary': 'Mashi-French Dictionary — Olulimi Lwirhu',
+    'head.login': 'Login — Olulimi Lwirhu',
+    'head.register': 'Sign up — Olulimi Lwirhu',
+    'head.googleCallback': 'Google Sign-in...',
+    'head.dashboard': 'Dashboard — Olulimi Lwirhu',
+    'head.myCourses': 'My courses — Olulimi Lwirhu',
+    'head.profile': 'My profile — Olulimi Lwirhu',
+    'head.admin': 'Administration — Olulimi Lwirhu',
+    'head.adminCourses': 'All courses — Admin — Olulimi Lwirhu',
+    'head.adminStats': 'Statistics — Admin — Olulimi Lwirhu',
+    'head.adminUsers': 'User management — Admin — Olulimi Lwirhu',
+    'head.teacher': 'Teacher space — Olulimi Lwirhu',
+    'head.teacherCourses': 'My courses — Teacher — Olulimi Lwirhu',
+    'head.teacherNewCourse': 'New course — Teacher — Olulimi Lwirhu',
+    'head.flashcards': 'Flashcards — Olulimi Lwirhu',
+    'head.exercises': 'Translation exercises — Olulimi Lwirhu',
+
+    // SEO descriptions
+    'seo.homeDesc': 'Online learning platform for the Mashi language. Structured courses, interactive quizzes, dictionary and library.',
+    'seo.aboutDesc': 'Discover the history and richness of the Mashi language, a Bantu language spoken in eastern DRC.',
+    'seo.coursesDesc': 'Browse our Mashi courses: beginner, intermediate and advanced. Learn at your own pace.',
+    'seo.libraryDesc': 'Explore our collection of books and resources on Mashi language and culture.',
+    'seo.translatorDesc': 'Translate words and phrases between Mashi and French. Free online translator.',
+    'seo.dictionaryDesc': 'Complete Mashi-French dictionary with phonetics, examples and grammatical categories.',
   },
 
   mashi: {
@@ -642,6 +716,43 @@ const translations: Record<Locale, Translations> = {
     'dictionary.noResultsSearch': 'Nta luderho lubonesire omu',
     'dictionary.tryAnother': 'Geza iluderho lindi.',
     'dictionary.empty': 'Ediksioneri erhaciyuzire buno.',
+
+    // Auth layout
+    'auth.backHome': 'Galuka emuhira',
+    'auth.allRightsReserved': 'Obwirhu bwoshi bw\'oluhembo.',
+    'auth.googleLoading': 'Okuyinjira na Google kurhi kugenda...',
+    'auth.googleBack': 'Galuka omu kuyinjira',
+
+    // Page titles (browser tab)
+    'head.home': 'Olulimi Lwirhu — Yige aMashi',
+    'head.about': 'Oku rhwirhu — Olulimi Lwirhu',
+    'head.courses': 'Esoko y\'amasomo — Olulimi Lwirhu',
+    'head.library': 'Isomero — Olulimi Lwirhu',
+    'head.translator': 'Omuhinduzi aMashi-Olufaransa — Olulimi Lwirhu',
+    'head.dictionary': 'Ediksioneri aMashi-Olufaransa — Olulimi Lwirhu',
+    'head.login': 'Yinjira — Olulimi Lwirhu',
+    'head.register': 'Yifungulire — Olulimi Lwirhu',
+    'head.googleCallback': 'Okuyinjira na Google...',
+    'head.dashboard': 'Olubaho — Olulimi Lwirhu',
+    'head.myCourses': 'Amasomo gani — Olulimi Lwirhu',
+    'head.profile': 'Omuntu wani — Olulimi Lwirhu',
+    'head.admin': 'Oburhegesi — Olulimi Lwirhu',
+    'head.adminCourses': 'Amasomo goshi — Oburhegesi — Olulimi Lwirhu',
+    'head.adminStats': 'Ebihange — Oburhegesi — Olulimi Lwirhu',
+    'head.adminUsers': 'Oburhegesi bw\'abantu — Oburhegesi — Olulimi Lwirhu',
+    'head.teacher': 'Ahantu h\'omufundisi — Olulimi Lwirhu',
+    'head.teacherCourses': 'Amasomo gani — Omufundisi — Olulimi Lwirhu',
+    'head.teacherNewCourse': 'Isomo lihyahya — Omufundisi — Olulimi Lwirhu',
+    'head.flashcards': 'Ebikarata — Olulimi Lwirhu',
+    'head.exercises': 'Emikino y\'okuhinduza — Olulimi Lwirhu',
+
+    // SEO descriptions
+    'seo.homeDesc': 'Ekifo eky\'okuyiga olulimi lw\'aMashi. Amasomo mazibu, ebibuzo, ediksioneri n\'isomero.',
+    'seo.aboutDesc': 'Manya emyanzi n\'obunzuzi bw\'olulimi lw\'aMashi, olulimi lw\'Abantu luderherwa ebushoshokero bw\'e RDC.',
+    'seo.coursesDesc': 'Lola amasomo girhu g\'aMashi: omurhangizi, omu karhî n\'omusomi. Yiga oku bwinja bwâwe.',
+    'seo.libraryDesc': 'Looza ebitabu n\'eby\'okuyiga oku lulimi n\'obuhirhi bw\'aMashi.',
+    'seo.translatorDesc': 'Hinduza amaderho n\'emyanzi omu aMashi n\'Olufaransa. Omuhinduzi bw\'obusa.',
+    'seo.dictionaryDesc': 'Ediksioneri aMashi-Olufaransa eyuzire n\'amaderho, ebimanye n\'amashigwa.',
   },
 
   ms: {
@@ -855,6 +966,43 @@ const translations: Record<Locale, Translations> = {
     'dictionary.noResultsSearch': 'Nta luderho lubonesire omu',
     'dictionary.tryAnother': 'Geza luderho lundi.',
     'dictionary.empty': 'Diksioneri erhaciyuzire buno.',
+
+    // Auth layout
+    'auth.backHome': 'Galuka muhira',
+    'auth.allRightsReserved': 'Haki zoshi zilezîwe.',
+    'auth.googleLoading': 'Kuyinjira na Google...',
+    'auth.googleBack': 'Galuka kuyinjira',
+
+    // Page titles (browser tab)
+    'head.home': 'Olulimi Lwirhu — Yiga aMashi',
+    'head.about': 'Kuli rhwe — Olulimi Lwirhu',
+    'head.courses': 'Masomo — Olulimi Lwirhu',
+    'head.library': 'Bitabu — Olulimi Lwirhu',
+    'head.translator': 'Kuhinduza aMashi-Kifaransa — Olulimi Lwirhu',
+    'head.dictionary': 'Diksioneri aMashi-Kifaransa — Olulimi Lwirhu',
+    'head.login': 'Yinjira — Olulimi Lwirhu',
+    'head.register': 'Fungula konte — Olulimi Lwirhu',
+    'head.googleCallback': 'Kuyinjira na Google...',
+    'head.dashboard': 'Lubaho — Olulimi Lwirhu',
+    'head.myCourses': 'Masomo gani — Olulimi Lwirhu',
+    'head.profile': 'Mwirhu — Olulimi Lwirhu',
+    'head.admin': 'Admin — Olulimi Lwirhu',
+    'head.adminCourses': 'Masomo goshi — Admin — Olulimi Lwirhu',
+    'head.adminStats': 'Statistiki — Admin — Olulimi Lwirhu',
+    'head.adminUsers': 'Bantu — Admin — Olulimi Lwirhu',
+    'head.teacher': 'Kwa mufundisi — Olulimi Lwirhu',
+    'head.teacherCourses': 'Masomo gani — Mufundisi — Olulimi Lwirhu',
+    'head.teacherNewCourse': 'Isomo lihya — Mufundisi — Olulimi Lwirhu',
+    'head.flashcards': 'Karata — Olulimi Lwirhu',
+    'head.exercises': 'Mikino ya kuhinduza — Olulimi Lwirhu',
+
+    // SEO descriptions
+    'seo.homeDesc': 'Ekifo eky\'okuyiga aMashi. Masomo, bibuzo, diksioneri na bitabu.',
+    'seo.aboutDesc': 'Manya myanzi na bunzuzi bwa aMashi, lulimi lwa Bantu luderherwa e Congo.',
+    'seo.coursesDesc': 'Lola masomo girhu ga aMashi: kurhangira, karhî na kuzibu. Yiga oku bwinja bwâwe.',
+    'seo.libraryDesc': 'Looza bitabu na by\'okuyiga aMashi.',
+    'seo.translatorDesc': 'Hinduza maderho omu aMashi na Kifaransa. Kuhinduza busa.',
+    'seo.dictionaryDesc': 'Diksioneri aMashi-Kifaransa na maderho, bimanye na mashigwa.',
   },
 }
 
