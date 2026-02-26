@@ -15,3 +15,5 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - [I18n] Rename Emashi to aMashi in Mashi translations ([6a31c82](https://github.com/cmukanisa/olulimi-frontend/commit/6a31c82))
 - [SEO] Enable SSR for public pages and enhance meta tags (Open Graph, Twitter Card, keywords) ([de80104](https://github.com/cmukanisa/olulimi-frontend/commit/de80104))
 - [SEO] Add robots.txt for search engine crawling ([90f17d6](https://github.com/cmukanisa/olulimi-frontend/commit/90f17d6))
+- [SEO] Add favicon and PWA manifest assets with multi-format icons and web app manifest ([9c3a092](https://github.com/cmukanisa/olulimi-frontend/commit/9c3a092))
+- [SEO] Add favicon link tags to nuxt config for cross-browser support ([ff5ca3c](https://github.com/cmukanisa/olulimi-frontend/commit/ff5ca3c))
