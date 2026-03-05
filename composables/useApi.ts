@@ -24,12 +24,12 @@ export const useApi = () => {
         navigateTo('/auth/login')
       } else if (!error.statusCode || error.message?.includes('fetch') || error.message?.includes('Failed') || error.message?.includes('ECONNREFUSED')) {
         if (!navigator.onLine) {
-          showWarning('Vous etes hors ligne. Verifiez votre connexion internet.')
+          showWarning('Vous êtes hors ligne.')
         } else {
-          showError('Le serveur est indisponible. Veuillez reessayer plus tard.')
+          showError('Serveur indisponible.')
         }
       } else if (error.statusCode >= 500) {
-        showError('Erreur serveur. Veuillez reessayer plus tard.')
+        showError('Erreur serveur.')
       }
       throw error
     }

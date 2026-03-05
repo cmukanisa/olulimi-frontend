@@ -20,3 +20,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - [Toast] Increase error and warning toast display duration to 6s ([c237280](https://github.com/cmukanisa/olulimi-frontend/commit/c237280))
 - [API] Add network error detection and backend health check ([7814130](https://github.com/cmukanisa/olulimi-frontend/commit/7814130))
 - [Health] Add client-side backend health check plugin ([d5d21fc](https://github.com/cmukanisa/olulimi-frontend/commit/d5d21fc))
+
+### Fixed
+- [Toast] Fix accents and shorten toast messages ([b2faba8](https://github.com/cmukanisa/olulimi-frontend/commit/b2faba8))
