@@ -17,3 +17,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - [SEO] Add robots.txt for search engine crawling ([90f17d6](https://github.com/cmukanisa/olulimi-frontend/commit/90f17d6))
 - [SEO] Add favicon and PWA manifest assets with multi-format icons and web app manifest ([9c3a092](https://github.com/cmukanisa/olulimi-frontend/commit/9c3a092))
 - [SEO] Add favicon link tags to nuxt config for cross-browser support ([ff5ca3c](https://github.com/cmukanisa/olulimi-frontend/commit/ff5ca3c))
+- [Toast] Increase error and warning toast display duration to 6s ([c237280](https://github.com/cmukanisa/olulimi-frontend/commit/c237280))
+- [API] Add network error detection and backend health check ([7814130](https://github.com/cmukanisa/olulimi-frontend/commit/7814130))
+- [Health] Add client-side backend health check plugin ([d5d21fc](https://github.com/cmukanisa/olulimi-frontend/commit/d5d21fc))
