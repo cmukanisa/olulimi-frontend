@@ -17,9 +17,9 @@ export const useToast = () => {
   }
 
   const success = (message: string) => addToast(message, 'success')
-  const error = (message: string) => addToast(message, 'error')
+  const error = (message: string) => addToast(message, 'error', 6000)
   const info = (message: string) => addToast(message, 'info')
-  const warning = (message: string) => addToast(message, 'warning')
+  const warning = (message: string) => addToast(message, 'warning', 6000)
 
   return { toasts, addToast, success, error, info, warning }
 }
