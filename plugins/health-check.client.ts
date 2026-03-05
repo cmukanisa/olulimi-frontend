@@ -8,14 +8,8 @@ export default defineNuxtPlugin(async () => {
         method: 'HEAD',
         timeout: 5000,
       })
-    } catch (err: unknown) {
-      const error = err as { statusCode?: number }
-      if (error.statusCode && error.statusCode < 500) return
-      if (!navigator.onLine) {
-        warning('Vous êtes hors ligne.')
-      } else {
-        warning('Serveur indisponible.')
-      }
+    } catch {
+      // silently ignore — no toast for server unavailability
     }
   }
 

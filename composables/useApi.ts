@@ -1,7 +1,7 @@
 export const useApi = () => {
   const config = useRuntimeConfig()
   const authStore = useAuthStore()
-  const { error: showError, warning: showWarning } = useToast()
+
 
   const apiFetch = async <T>(url: string, options: any = {}): Promise<T> => {
     const headers: Record<string, string> = {
@@ -22,14 +22,6 @@ export const useApi = () => {
       if (error.statusCode === 401 && authStore.token) {
         authStore.logout()
         navigateTo('/auth/login')
-      } else if (!error.statusCode || error.message?.includes('fetch') || error.message?.includes('Failed') || error.message?.includes('ECONNREFUSED')) {
-        if (!navigator.onLine) {
-          showWarning('Vous êtes hors ligne.')
-        } else {
-          showError('Serveur indisponible.')
-        }
-      } else if (error.statusCode >= 500) {
-        showError('Erreur serveur.')
       }
       throw error
     }
