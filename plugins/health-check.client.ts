@@ -4,11 +4,13 @@ export default defineNuxtPlugin(async () => {
 
   const checkBackend = async () => {
     try {
-      await $fetch(`${config.public.apiBase}/courses`, {
-        method: 'GET',
+      await $fetch.raw(`${config.public.apiBase}`, {
+        method: 'HEAD',
         timeout: 5000,
       })
-    } catch {
+    } catch (err: unknown) {
+      const error = err as { statusCode?: number }
+      if (error.statusCode && error.statusCode < 500) return
       if (!navigator.onLine) {
         warning('Vous êtes hors ligne.')
       } else {

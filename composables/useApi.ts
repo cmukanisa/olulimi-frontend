@@ -37,13 +37,14 @@ export const useApi = () => {
 
   const checkBackendHealth = async (): Promise<boolean> => {
     try {
-      await $fetch(`${config.public.apiBase}/courses`, {
-        method: 'GET',
+      await $fetch.raw(`${config.public.apiBase}`, {
+        method: 'HEAD',
         timeout: 5000,
       })
       return true
-    } catch {
-      return false
+    } catch (err: unknown) {
+      const error = err as { statusCode?: number }
+      return !!error.statusCode && error.statusCode < 500
     }
   }
 
