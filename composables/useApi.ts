@@ -19,7 +19,7 @@ export const useApi = () => {
         headers,
       })
     } catch (error: any) {
-      if (error.statusCode === 401) {
+      if (error.statusCode === 401 && authStore.token) {
         authStore.logout()
         navigateTo('/auth/login')
       } else if (!error.statusCode || error.message?.includes('fetch') || error.message?.includes('Failed') || error.message?.includes('ECONNREFUSED')) {
@@ -37,13 +37,14 @@ export const useApi = () => {
 
   const checkBackendHealth = async (): Promise<boolean> => {
     try {
-      await $fetch(`${config.public.apiBase}/courses`, {
-        method: 'GET',
+      await $fetch.raw(`${config.public.apiBase}`, {
+        method: 'HEAD',
         timeout: 5000,
       })
       return true
-    } catch {
-      return false
+    } catch (err: unknown) {
+      const error = err as { statusCode?: number }
+      return !!error.statusCode && error.statusCode < 500
     }
   }
 
