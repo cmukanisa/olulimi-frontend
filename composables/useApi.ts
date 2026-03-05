@@ -2,7 +2,6 @@ export const useApi = () => {
   const config = useRuntimeConfig()
   const authStore = useAuthStore()
 
-
   const apiFetch = async <T>(url: string, options: any = {}): Promise<T> => {
     const headers: Record<string, string> = {
       'Content-Type': 'application/json',
