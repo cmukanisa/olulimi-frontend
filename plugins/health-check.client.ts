@@ -8,8 +8,8 @@ export default defineNuxtPlugin(async () => {
         method: 'HEAD',
         timeout: 5000,
       })
-    } catch {
-      // silently ignore — no toast for server unavailability
+    } catch (err) {
+      console.warn('[health-check] Backend unreachable:', err)
     }
   }
 
