@@ -1031,10 +1031,10 @@ export const useLocale = () => {
   }
 
   const localeOptions = [
-    { value: 'fr' as Locale, label: 'FR', fullLabel: 'Français', icon: 'emojione:flag-for-france' },
-    { value: 'en' as Locale, label: 'EN', fullLabel: 'English', icon: 'emojione:flag-for-united-kingdom' },
-    { value: 'mashi' as Locale, label: 'MA', fullLabel: 'Mashi', icon: 'emojione:flag-for-congo-kinshasa' },
-    { value: 'ms' as Locale, label: 'MS', fullLabel: 'Mashi Simple', icon: 'emojione:flag-for-congo-kinshasa' },
+    { value: 'fr' as Locale, label: 'FR', fullLabel: 'Français', icon: 'heroicons:language' },
+    { value: 'en' as Locale, label: 'EN', fullLabel: 'English', icon: 'heroicons:language' },
+    { value: 'mashi' as Locale, label: 'MA', fullLabel: 'Mashi', icon: 'heroicons:language' },
+    { value: 'ms' as Locale, label: 'MS', fullLabel: 'Mashi Simple', icon: 'heroicons:language' },
   ]
 
   return { locale, setLocale, t, localeOptions, currentLocale }
