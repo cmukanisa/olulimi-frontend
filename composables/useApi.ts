@@ -19,7 +19,7 @@ export const useApi = () => {
         headers,
       })
     } catch (error: any) {
-      if (error.statusCode === 401) {
+      if (error.statusCode === 401 && authStore.token) {
         authStore.logout()
         navigateTo('/auth/login')
       } else if (!error.statusCode || error.message?.includes('fetch') || error.message?.includes('Failed') || error.message?.includes('ECONNREFUSED')) {
