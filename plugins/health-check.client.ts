@@ -10,9 +10,9 @@ export default defineNuxtPlugin(async () => {
       })
     } catch {
       if (!navigator.onLine) {
-        warning('Vous etes hors ligne. Verifiez votre connexion internet.')
+        warning('Vous êtes hors ligne.')
       } else {
-        warning('Le serveur backend est indisponible. Certaines fonctionnalites peuvent ne pas fonctionner.')
+        warning('Serveur indisponible.')
       }
     }
   }
@@ -22,12 +22,12 @@ export default defineNuxtPlugin(async () => {
 
   // Listen for online/offline events
   window.addEventListener('offline', () => {
-    warning('Connexion perdue. Vous etes hors ligne.')
+    warning('Connexion perdue.')
   })
 
   window.addEventListener('online', () => {
     const { success } = useToast()
-    success('Connexion retablie.')
+    success('Connexion rétablie.')
     checkBackend()
   })
 })
